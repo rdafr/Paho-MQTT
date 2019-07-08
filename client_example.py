@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 
 def on_connect(client, userdata, flags, rc):
     client.subscribe("result") 
-#topic
+#topic here as "result"
 
 def on_message(client, userdata, msg):
     print(msg.topic+" -  "+str(msg.payload))
